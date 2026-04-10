@@ -1,0 +1,112 @@
+/* 基础全局样式 - 深色主题 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #FFFFFF;
+  background-color: #07050D;
+}
+
+a {
+  color: #C084FC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #E9D5FF;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1525;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a3f5c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b5a7a;
+}
+
+/* 通用容器 */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Element Plus 暗色适配 */
+.el-button {
+  border-radius: 12px;
+}
+
+.el-input__wrapper {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: none !important;
+}
+
+.el-input__inner {
+  color: #fff !important;
+}
+
+.el-input__inner::placeholder {
+  color: #64748b !important;
+}
+
+.el-card {
+  background: rgba(168, 85, 247, 0.08) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 16px !important;
+}
+
+.el-tag {
+  border-radius: 8px;
+}
+
+.el-rate__icon {
+  font-size: 18px;
+}
+
+.el-progress__text {
+  color: #94a3b8 !important;
+}
+
+/* 文本省略 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
